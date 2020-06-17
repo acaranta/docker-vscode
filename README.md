@@ -14,9 +14,9 @@ services:
     environment:
       - VNC_PASSWORD=<yourVNCpassword>
     volumes:
-      - <yourdockervolume>:/app/.config:rw
+      - <yourdockervolume>:/app/:rw
     ports:
       - 5800:5800
 ```
 
-NB : the volume for config/data files must be read/write for UID/GID 1000/1000
+NB : the volume for /app files must be read/write for UID/GID 1000/1000
