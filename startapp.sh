@@ -2,4 +2,4 @@
 cd /app 
 USER=appuser 
 HOME="/app"
-/usr/bin/code -w
+exec /usr/bin/code -w
